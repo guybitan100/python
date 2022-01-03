@@ -4,7 +4,8 @@ def add_numbers(*args):
         total += a
     print(total)
 
-    add_numbers(3)
-    add_numbers(3, 32)
-    add_numbers(3, 32, 42)
-    add_numbers(3, 32, 42, 56)
+
+add_numbers(3)
+add_numbers(3, 32)
+add_numbers(3, 32, 42)
+add_numbers(3, 32, 42, 56)
