@@ -4,10 +4,11 @@ import operator
 
 
 def start(url):
+    # Blank list
     word_list = []
     source_code = requests.get(url).text
-    soup = BeautifulSoup(source_code)
-    for post_text in soup.find_all('a', {'class': 'index_singleListingTitles'}):
+    soup_obj = BeautifulSoup(source_code)
+    for post_text in soup_obj.find_all('a', {'class': 'index_singleListingTitles'}):
         content = post_text.string
         word = content.lower().split()
         for each_word in word:
