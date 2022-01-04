@@ -1,7 +1,7 @@
 # import urllib.request
 from urllib import request
 
-goog_url = 'http//'
+goog_url = 'http//tt.csv'
 
 
 def download_stock_data(csv_url):
