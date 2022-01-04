@@ -23,12 +23,12 @@ def clean_up_list(word_list):
         word = word.replace(symbols[i], "")
     if len(word) > 0:
         clean_word_list.append(word)
-    create_dictionary(clean_up_list)
+    create_dictionary(clean_word_list)
 
 
 def create_dictionary(clean_word_list):
     word_count = {}
-    for word in clean_up_list:
+    for word in clean_word_list:
         if word in word_count:
             word_count[word] += 1
         else:
