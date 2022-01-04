@@ -4,13 +4,17 @@ class Parent():
         print('Roberts')
 
 
+# Inherits from Parent
 class Child(Parent):
 
     def print_first_name(self):
         print('Bucky')
 
+    # Overnight Parent
+    '''
     def print_last_name(selfs):
         print('Bitan')
+'''
 
 
 bucky = Child()
