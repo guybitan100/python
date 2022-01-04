@@ -12,7 +12,8 @@ stocks = [
     {'ticker': 'AAPL', 'price': 99.76}
 ]
 # All item in the list is map
+'''
 for item in stocks:
     print(item)
-
+'''
 print(heapq.nlargest(2, stocks, key=lambda stock: stock['price']))
